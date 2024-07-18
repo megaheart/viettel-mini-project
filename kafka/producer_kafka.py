@@ -11,7 +11,7 @@ producer = Producer({
     
 })
 
-topic = 'vdt2024'
+topic = 'topic1'
 
 def acked(err, msg):
     if err is not None:

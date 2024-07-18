@@ -2,12 +2,12 @@ from confluent_kafka import Consumer
 import socket
 
 consumer = Consumer({
-    'bootstrap.servers': 'localhost:9093',
+    'bootstrap.servers': 'localhost:9092',
     'group.id': socket.gethostname(),
     'auto.offset.reset': 'earliest'
 })
 
-topic = 'vdt2024'
+topic = 'topic1'
 consumer.subscribe([topic])
 
 while True:
